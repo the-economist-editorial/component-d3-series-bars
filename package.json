@@ -1,6 +1,6 @@
 {
   "name": "@economist/component-d3-series-bars",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React component creates one or (eventually) more bar series",
   "author": "The Economist (http://economist.com)",
   "license": "ISC",
