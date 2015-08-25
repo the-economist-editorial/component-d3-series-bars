@@ -1,4 +1,4 @@
-// import D3 from 'd3';
+//import D3 from 'd3';
 import React from 'react';
 
 export default class D3SeriesBars extends React.Component {
