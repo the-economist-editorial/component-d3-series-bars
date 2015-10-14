@@ -40,7 +40,7 @@ export default class D3SeriesBars extends React.Component {
   // Handles bar click event. Params are data (cat and value)
   // and index in overall data
   barClick(data, index) {
-    var clickObj = {data, index};
+    const clickObj = { data, index };
     this.props.passBarClick(clickObj);
   }
 
@@ -70,13 +70,13 @@ export default class D3SeriesBars extends React.Component {
     // Width is zero by default when new rects are created
     barBinding
       .enter().append('rect')
-      //.transition().duration(duration)
+      // .transition().duration(duration)
         .attr('class', 'd3-bar-rect')
         .attr('y', (d) => yScale(d.category))
         .attr('x', 0)
         .attr('height', yScale.rangeBand())
         .attr('width', 0)
-        .on('click', (d,i) => this.barClick(d,i))
+        .on('click', (d, i) => this.barClick(d, i))
         ;
 
     barBinding
